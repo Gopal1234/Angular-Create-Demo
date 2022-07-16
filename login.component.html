@@ -1,0 +1,9 @@
+<html>
+<form>
+<div style="color: red;" *ngIf="invalidMsg">{{errorMsg}}</div>
+<div  style="color: green;" *ngIf="!invalidMsg">{{msg}}</div>
+Enter UserName:<input type="text" [(ngModel)]="userName"  name="userName"><br>
+Enter Password:<input type="password" [(ngModel)]="userPassword" name="userPassword"><br>
+<button type="button" (click)="handleLogin()">Login</button>
+</form>
+</html>
